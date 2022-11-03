@@ -7,7 +7,7 @@ app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False
 
 @app.route('/')
 def hello_world():
-    return 'Welcome to RUI application!</a>'
+    return 'Welcome to Flask application!</a>'
 
 @app.route('/time')
 def get_current_time():
