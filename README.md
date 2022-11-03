@@ -18,7 +18,7 @@ docker-compose up
 and finally go on:
 
 ```
-http://localhost:5000/time      (test timer flask api)
+http://localhost:5001/time      (test timer flask api)
 ```
 
 ```
