@@ -10,6 +10,19 @@ services:
       - ./api/code:/code
     ports:
       - "5001:5000"
+    depends_on:
+      - db
+
+  db:
+    build:
+      context: ./db
+    restart: always
+    volumes:
+      - ./db/postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: fNLM#D6544nrWGQ
 
   frontend:
     build:
