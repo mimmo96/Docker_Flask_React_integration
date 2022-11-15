@@ -4,6 +4,7 @@ WORKDIR /code
 COPY code .
 
 RUN npm i
+RUN npm run postinstall
 
 EXPOSE 3000
 
